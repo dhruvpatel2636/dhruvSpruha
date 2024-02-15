@@ -24,8 +24,16 @@ export const MENUITEMS: (MenuItem | NestedMenuItem)[] = [
     menutitle: "DASHBOARD",
     Items: [
       {
-        path: "/components/controls/controls",
+        path: "/components/dashboard/dashboard",
         icon: "ti-home",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Dashboard",
+      },
+      {
+        path: "/components/controls/controls",
+        icon: "ti-wallet",
         type: "link",
         active: false,
         selected: false,

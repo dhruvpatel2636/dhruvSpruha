@@ -629,17 +629,17 @@
     .app-sidebar .slide-menu.child1 .side-menu__item:hover,
     .app-sidebar .slide-menu.child2 .side-menu__item:hover,
     .app-sidebar .slide-menu.child3 .side-menu__item:hover {
-        color: #fff;
-        &::before {
-            opacity: 1 !important;
-            color: #fff !important;
-        }
+        // color: #fff;
+        // &::before {
+        //     opacity: 1 !important;
+        //     color: #fff !important;
+        // }
     }
 
-    .app-sidebar .side-menu__item.active,
-    .app-sidebar .side-menu__item:hover {
-        color: #fff;
-    }
+    // .app-sidebar .side-menu__item.active,
+    // .app-sidebar .side-menu__item:hover {
+    //     color: #fff;
+    // }
 
     .app-sidebar .slide-menu.child1 .side-menu__item.active:before,
     .app-sidebar .slide-menu.child2 .side-menu__item.active:before,
@@ -648,7 +648,7 @@
     }
 
     &[data-theme-mode="light"] {
-        --menu-bg: #0e0e23;
+        --menu-bg: #fff;
 
         &[data-bg-img="bgimg1"] {
             --menu-bg: url(../images/menu-bg-images/bg-img1.jpg);
@@ -691,8 +691,8 @@
     }
 
     &[data-theme-mode="light"] {
-        --menu-bg: #0e0e23;
-        --menu-prime-color: rgba(255, 255, 255, 0.4);
+        --menu-bg: #fff;
+        --menu-prime-color: #536485;
     }
 }
 

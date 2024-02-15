@@ -10,7 +10,7 @@ const PageHeader = (props: { title: string ; item: string ; active_item: string 
           <li className="breadcrumb-item active" aria-current="page">{props.active_item}</li>
         </ol>
       </div>
-      <div className="d-flex">
+      {/* <div className="d-flex">
         <div className="justify-content-center">
           <button type="button" className="btn btn-white btn-icon-text my-2 me-2 d-inline-flex align-items-center">
             <i className="fe fe-download me-2"></i> Import
@@ -22,7 +22,7 @@ const PageHeader = (props: { title: string ; item: string ; active_item: string 
             <i className="fe fe-download-cloud me-2"></i> Download Report
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

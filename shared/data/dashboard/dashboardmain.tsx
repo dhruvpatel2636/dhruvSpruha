@@ -14,7 +14,7 @@ export const linechart : any= {
         type: "line",
         tension: 0.4,
         
-      },
+      },  
      
       {
         label: "AMOUNT USED",
@@ -30,21 +30,23 @@ export const linechart : any= {
       },
     ],
   };
-  export const linechartoptions : any = {
-  	series: [{
-      name: "Total Budget",
-      data: [20, 38, 38, 72, 55, 63, 43, 76, 55, 80, 40, 80]
-    }, {
-      name: "Amount Used",
-      data: [85, 65, 75, 38, 85, 35, 62, 40, 40, 64, 50, 89]
-    }],
-    options:{
-
+  export const linechartoptions: any = {
+    series: [
+      {
+        name: "Total Budget",
+        data: [20, 38, 38, 72, 55, 63, 43, 76, 55, 80, 40, 80],
+      },
+      {
+        name: "Amount Used",
+        data: [85, 65, 75, 38, 85, 35, 62, 40, 40, 64, 50, 89],
+      },
+    ],
+    options: {
       chart: {
         height: 320,
-        type: 'line',
+        type: "line",
         zoom: {
-          enabled: false
+          enabled: false,
         },
         dropShadow: {
           enabled: true,
@@ -52,12 +54,12 @@ export const linechart : any= {
           top: 5,
           left: 0,
           blur: 3,
-          color: '#000',
-          opacity: 0.1
+          color: "#000",
+          opacity: 0.1,
         },
       },
       dataLabels: {
-        enabled: false
+        enabled: false,
       },
       legend: {
         position: "top",
@@ -66,318 +68,324 @@ export const linechart : any= {
         fontWeight: "bold",
       },
       stroke: {
-        curve: 'smooth',
-        width: '3',
+        curve: "smooth",
+        width: "3",
         dashArray: [0, 5],
       },
       grid: {
-        borderColor: '#f2f6f7',
+        borderColor: "#f2f6f7",
       },
-      colors: ["rgb(98, 89, 202)", "rgba(98, 89, 202, 0.3)"],
+      colors: ["#6390CA"],
       yaxis: {
         title: {
-          text: '',
+          text: "",
           style: {
-            color: '#adb5be',
-            fontSize: '14px',
-            fontFamily: 'poppins, sans-serif',
+            color: "#adb5be",
+            fontSize: "14px",
+            fontFamily: "poppins, sans-serif",
             fontWeight: 600,
-            cssClass: 'apexcharts-yaxis-label',
+            cssClass: "apexcharts-yaxis-label",
           },
-        }
+        },
       },
       xaxis: {
-        type: 'month',
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        type: "month",
+        categories: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
         axisBorder: {
           show: false,
-          color: 'rgba(119, 119, 142, 0.05)',
+          color: "rgba(119, 119, 142, 0.05)",
           offsetX: 0,
           offsetY: 0,
         },
         axisTicks: {
           show: true,
-          borderType: 'solid',
-          color: 'rgba(119, 119, 142, 0.05)',
+          borderType: "solid",
+          color: "rgba(119, 119, 142, 0.05)",
           width: 6,
           offsetX: 0,
-          offsetY: 0
+          offsetY: 0,
         },
         labels: {
-          rotate: -90
-        }
-      }
-    }
+          rotate: -90,
+        },
+      },
+    },
   };
   ////Radialbar
-  export const Radialbar : any = {
+  export const Radialbar: any = {
     series: [50],
-    options:{
-
+    options: {
       chart: {
         height: 100,
-        type: "radialBar"
+        type: "radialBar",
       },
-      
-  
-      
-      colors: ["rgb(98, 89, 202)"],
-    
+
+      colors: ["#6390CA"],
+
       states: {
         normal: {
           filter: {
-            type: 'none',
-          }
+            type: "none",
+          },
         },
         hover: {
           filter: {
-            type: 'none',
-          }
+            type: "none",
+          },
         },
         active: {
           filter: {
-            type: 'none',
-          }
+            type: "none",
+          },
         },
       },
-      
+
       plotOptions: {
         radialBar: {
-        hollow: {
-          size: "60%"
-        },
-         
-        dataLabels: {
-          showOn: "always",
-          name: {
-          offsetY: -10,
-          show: false,
-          color: "#888",
-          fontSize: "13px"
+          hollow: {
+            size: "60%",
           },
-          value: {
-          offsetY: 5,
-          color: "#111",
-          fontSize: "18px",
-          fontWeight: 'bold',
-          show: true
-          }
-        }
-        }
+
+          dataLabels: {
+            showOn: "always",
+            name: {
+              offsetY: -10,
+              show: false,
+              color: "#888",
+              fontSize: "13px",
+            },
+            value: {
+              offsetY: 5,
+              color: "#111",
+              fontSize: "18px",
+              fontWeight: "bold",
+              show: true,
+            },
+          },
+        },
       },
-    
+
       grid: {
         padding: {
           top: -20,
           right: -25,
           bottom: -20,
-          left: -25
+          left: -25,
         },
       },
-      
+
       stroke: {
         lineCap: "round",
       },
-      labels: [""]
-    }
+      labels: [""],
+    },
   };
   // --------Raialbar-end---------------------->
  
-  export const Webdesgining : any = {
-    series: [{
-      name: 'Total Projects',
-      data: [44, 42, 57, 86, 58, 55, 70],
-    }, {
-      name: 'On Going',
-      data: [-34, -22, -37, -56, -21, -35, -60],
-    }],
-    options:{
-
+  export const Webdesgining: any = {
+    series: [
+      {
+        name: "Total Projects",
+        data: [44, 42, 57, 86, 58, 55, 70],
+      },
+      {
+        name: "On Going",
+        data: [-34, -22, -37, -56, -21, -35, -60],
+      },
+    ],
+    options: {
       chart: {
         stacked: true,
-        type: 'bar',
+        type: "bar",
         height: 175,
       },
       grid: {
         show: false,
-        borderColor: '#f2f6f7',
+        borderColor: "#f2f6f7",
       },
-      colors: ["#e9e9e9", "rgb(98, 89, 202)"],                        
+      colors: ["#e9e9e9", "rgb(98, 89, 202)"],
       plotOptions: {
         bar: {
-          columnWidth: '15%',
+          columnWidth: "15%",
           borderRadius: 5,
-          borderRadiusApplication: 'end',
-          borderRadiusWhenStacked: 'all',
+          borderRadiusApplication: "end",
+          borderRadiusWhenStacked: "all",
           colors: {
-            ranges: [{
-              from: -100,
-              to: -46,
-              color: 'rgb(98, 89, 202)'
-            }, {
-              from: -45,
-              to: 0,
-              color: 'rgb(98, 89, 202)'
-            }]
+            ranges: [
+              {
+                from: -100,
+                to: -46,
+                color: "#6390CA",
+              },
+              {
+                from: -45,
+                to: 0,
+                color: "#6390CA",
+              },
+            ],
           },
-          
-        }
+        },
       },
       dataLabels: {
         enabled: false,
       },
       legend: {
         show: false,
-        position: 'top',
+        position: "top",
       },
       yaxis: {
         Show: false,
         labels: {
           show: false,
-        }
+        },
       },
       xaxis: {
         show: false,
-        type: 'day',
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        type: "day",
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
         axisBorder: {
           show: false,
-          color: 'rgba(119, 119, 142, 0.05)',
+          color: "rgba(119, 119, 142, 0.05)",
           offsetX: 0,
           offsetY: 0,
         },
-      }
-    }
+      },
+    },
   };
-  export const Webdesgining1 : any = {
+  export const Webdesgining1: any = {
     series: [1754, 544],
-    options:{
+    options: {
       labels: ["Bitcoin", "Ethereum"],
       chart: {
         height: 73,
         width: 50,
-        type: 'donut',
+        type: "donut",
       },
       dataLabels: {
         enabled: false,
       },
-      
+
       legend: {
         show: false,
       },
       stroke: {
         show: true,
-        curve: 'smooth',
-        lineCap: 'round',
+        curve: "smooth",
+        lineCap: "round",
         colors: "#fff",
         width: 0,
         dashArray: 0,
       },
       plotOptions: {
-      
         pie: {
           expandOnClick: false,
           donut: {
-            size: '75%',
-            background: 'transparent',
+            size: "75%",
+            background: "transparent",
             labels: {
               show: false,
               name: {
                 show: true,
-                fontSize: '20px',
-                color: '#495057',
-                offsetY: -4
+                fontSize: "20px",
+                color: "#495057",
+                offsetY: -4,
               },
               value: {
                 show: true,
-                fontSize: '18px',
+                fontSize: "18px",
                 color: undefined,
                 offsetY: 8,
                 formatter: function (val: string) {
-                  return val + "%"
-                }
+                  return val + "%";
+                },
               },
               total: {
                 show: true,
                 showAlways: true,
-                label: 'Total',
-                fontSize: '22px',
+                label: "Total",
+                fontSize: "22px",
                 fontWeight: 600,
-                color: '#495057',
-              }
-      
-            }
-          }
-        }
-      },
-      colors: ["rgb(98, 89, 202)", "rgba(98, 89, 202, 0.2)"],
+                color: "#495057",
+              },
+            },
+          },
         },
-    
-      
-      }
-      export const Webdesgining2 : any = {
+      },
+      colors: ["#6390CA", "rgba(98, 89, 202, 0.2)"],
+    },
+  };
+      export const Webdesgining2: any = {
         series: [1854, 250],
-        options:{
+        options: {
           labels: ["Bitcoin", "Ethereum"],
           chart: {
             height: 73,
             width: 50,
-            type: 'donut',
+            type: "donut",
           },
           dataLabels: {
             enabled: false,
           },
-          
+
           legend: {
             show: false,
           },
           stroke: {
             show: true,
-            curve: 'smooth',
-            lineCap: 'round',
+            curve: "smooth",
+            lineCap: "round",
             colors: "#fff",
             width: 0,
             dashArray: 0,
           },
           plotOptions: {
-          
             pie: {
               expandOnClick: false,
               donut: {
-                size: '75%',
-                background: 'transparent',
+                size: "75%",
+                background: "transparent",
                 labels: {
                   show: false,
                   name: {
                     show: true,
-                    fontSize: '20px',
-                    color: '#495057',
-                    offsetY: -4
+                    fontSize: "20px",
+                    color: "#495057",
+                    offsetY: -4,
                   },
                   value: {
                     show: true,
-                    fontSize: '18px',
+                    fontSize: "18px",
                     color: undefined,
                     offsetY: 8,
                     formatter: function (val: string) {
-                      return val + "%"
-                    }
+                      return val + "%";
+                    },
                   },
                   total: {
                     show: true,
                     showAlways: true,
-                    label: 'Total',
-                    fontSize: '22px',
+                    label: "Total",
+                    fontSize: "22px",
                     fontWeight: 600,
-                    color: '#495057',
-                  }
-          
-                }
-              }
-            }
-          },
-          colors: ["rgb(98, 89, 202)", "rgba(98, 89, 202, 0.2)"],
+                    color: "#495057",
+                  },
+                },
+              },
             },
-        
-          
-          }
+          },
+          colors: ["#6390CA", "rgba(98, 89, 202, 0.2)"],
+        },
+      };
