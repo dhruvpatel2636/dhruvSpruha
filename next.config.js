@@ -5,13 +5,13 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   swcMinify: true,
-  basePath: isProd ? '/spruha-ts/preview' : undefined,
-  assetPrefix : isProd ? 'https://nextjs.spruko.com/spruha-ts/preview/' : undefined,
+  basePath: "",
+  assetPrefix: "",
   images: {
     loader: 'imgix',
     path: '/',
   },
-  
+
 }
 
 module.exports = nextConfig
